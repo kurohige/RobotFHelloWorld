@@ -47,8 +47,8 @@ jobs:
 
   - task: PublishTestResult@2
     inputs:
-    testResultsFiles: output.xml
-    searchFolder: 'D:\a\1\s\Results\'
-    condition:  succeededOrFailed()
+      testResultsFiles: 'output.xml'
+      searchFolder: 'D:\a\1\s\Results\'
+      condition:  succeededOrFailed()
     displayName:  'Publish Test Results output.xml'
 
