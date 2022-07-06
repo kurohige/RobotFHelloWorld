@@ -42,12 +42,12 @@ jobs:
       npm install msedgedriver
     displayName: 'Install Dependencies'
     
-  - powershell: robot -d Results -v BROWSER:firefox Tests/amazon.robot
+  - powershell: robot -d Results -x outputxunit.xml -v BROWSER:firefox Tests/amazon.robot
     displayName: 'Run Robot Scripts'
 
   - task: PublishTestResult@2
     inputs:
-      testResultsFiles: 'output.xml'
+      testResultsFiles: outputxunit.xml
       searchFolder: 'D:\a\1\s\Results\'
       condition:  succeededOrFailed()
     displayName:  'Publish Test Results output.xml'
