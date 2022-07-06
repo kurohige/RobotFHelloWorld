@@ -1,0 +1,11 @@
+1650458561569	geckodriver	INFO	Listening on 127.0.0.1:54891
+1650458564638	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54892" "-no-remote" "-profile" "C:\\Users\\jhida\\AppData\\Local\\Temp\\rust_mozprofiletn18gF"
+1650458564895	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jhida\\AppData\\Local\\Temp\\rust_mozprofiletn18gF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54892/devtools/browser/cf50ff02-d3cd-4f74-8bbb-6017f16000be
+1650458566638	Marionette	INFO	Listening on port 54906
+1650458566691	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650458567563	Marionette	INFO	Stopped listening on port 54906
+[Parent 29860, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource:///modules/UrlbarProviderSearchTips.jsm, line 380: TypeError: window is null
+JavaScript error: resource://gre/modules/TerminatorTelemetry.jsm, line 71: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
