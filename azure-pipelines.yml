@@ -45,10 +45,12 @@ jobs:
   - powershell: robot -d Results -x outputxunit.xml -v BROWSER:firefox Tests/amazon.robot
     displayName: 'Run Robot Scripts'
 
-  - task: PublishTestResult@2
+  - task: PublishTestResults@2
+    displayName:  'Publish Test Results output.xml'
+    condition:  succeededOrFailed()
     inputs:
       testResultsFiles: outputxunit.xml
       searchFolder: 'D:\a\1\s\Results\'
-      condition:  succeededOrFailed()
-    displayName:  'Publish Test Results output.xml'
+      
+    
 
